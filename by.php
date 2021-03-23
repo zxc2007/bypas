@@ -1875,7 +1875,7 @@ function zipMenu($dir,$file){
 		$zip = new ZipArchive();
 		$res = $zip->open($zip_files);
 		if ($res === TRUE){
-			$name = basename($zip_files, ".zip")."_unzip";
+			$name = basename($zip_files, ".zip");
 			@mkdir($name);
 			@$zip->extractTo($to_dir."/".$name);  
 			return @$zip->close();
