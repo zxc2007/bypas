@@ -1949,9 +1949,9 @@ function zipMenu($dir,$file){
 		<meta name="viewport" content="widht=device-widht, initial-scale=1"/>
 		<meta name="theme-color" content="#343a40"/>
 		<meta name="author" content="Holiq"/>
-		<meta name="copyright" content="{ IndoSec }"/>
+		<meta name="copyright" content="{ Dhen Bhocil }"/>
 		<link rel="icon" type="image/png" href="https://www.holiq.projectku.ga/indosec.png"/>
-		<title>{ IndoSec sHell }</title>
+		<title>{ Dhen Bhocil sHell }</title>
 		<link rel="stylesheet" href="pojan/assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
